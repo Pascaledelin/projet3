@@ -1,0 +1,210 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    background-color: #71aa87;
+    width: 100%;
+}
+
+H1 {
+    color: #FBCD2E;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#title_page {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.7em;
+}
+
+footer {
+    background: #71aa87;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+footer h2 {
+    color: #FBCD2E;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    font-size: 40px;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgb(59, 24, 212)), to(rgb(27, 165, 230)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#second_menu:hover {
+    transform: scale(1.50);
+}
+
+#containeur_menu3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.containeur_menu_detail1 {
+    color: black
+}
+
+.containeur_menu_detail2 {
+    color: black;
+}
+
+.containeur_menu_detail3 {
+    color: black;
+}
+
+#title_menu3 {
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#menu3 {
+    width: 700px;
+    height: AUTO;
+    font-family: 'Indie Flower', cursive;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    box-shadow: 5px 5px 5px #a8a8a8;
+    background: #edf0f8;
+}
+
+.menu_detail {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+p {
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#bottom_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1em;
+}
+
+.flotte {
+    margin-right: 20px;
+}
+
+.hr_1 {
+    /* centre verticalement les enfants entre eux */
+    align-items: center;
+
+    /* active flexbox */
+    display: flex;
+
+    /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+    text-align: center
+}
+
+.hr_1::before,
+.hr_1::after {
+    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
+    border-top: 3px solid;
+    color: rgb(59, 24, 212);
+    content: "";
+    border-radius: 20px;
+    /* partage le reste de la largeur disponible */
+    flex: 1;
+
+    /* espace les traits du texte */
+    margin: 0 .2em;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.hr_2 {
+    /* centre verticalement les enfants entre eux */
+    align-items: center;
+
+    /* active flexbox */
+    display: flex;
+
+    /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+    text-align: center
+}
+
+.hr_2::before,
+.hr_2::after {
+    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
+    border-top: 3px solid;
+    color: rgb(24, 121, 212);
+    content: "";
+    border-radius: 20px;
+    /* partage le reste de la largeur disponible */
+    flex: 1;
+
+    /* espace les traits du texte */
+    margin: 0 .2em;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.hr_3 {
+    /* centre verticalement les enfants entre eux */
+    align-items: center;
+
+    /* active flexbox */
+    display: flex;
+
+    /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+    text-align: center
+}
+
+.hr_3::before,
+.hr_3::after {
+    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
+    border-top: 3px solid;
+    color: rgb(27, 165, 230);
+    content: "";
+    border-radius: 20px;
+    /* partage le reste de la largeur disponible */
+    flex: 1;
+
+    /* espace les traits du texte */
+    margin: 0 .2em;
+    margin-left: 8%;
+    margin-right: 8%;
+}

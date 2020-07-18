@@ -1,0 +1,201 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    background-color: #71aa87;
+    width: 100%;
+}
+
+H1 {
+    color: #FBCD2E;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#title_page {
+    text-align: center;
+    font-family: 'Amita', cursive;
+    font-size: 1.7em;
+}
+
+footer {
+    background: #71aa87;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+footer h2 {
+    color: #FBCD2E;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    font-size: 35px;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgb(184, 105, 37)), to(rgb(105, 63, 209)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#second_menu:hover {
+    transform: scale(1.50);
+}
+
+#containeur_menu2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.containeur_menu_detail1 {
+    color: rgba(184, 105, 37, 0.76);
+}
+
+.containeur_menu_detail2 {
+    color: rgb(163, 99, 173);
+}
+
+.containeur_menu_detail3 {
+    color: rgb(105, 63, 209);
+}
+
+#title_menu2 {
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#menu2 {
+    width: 700px;
+    height: AUTO;
+    font-family: 'Crimson Text', serif;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    box-shadow: 5px 5px 5px #a8a8a8;
+    background: #f1ecf1;
+}
+
+.menu_detail {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+p {
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#bottom_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+    font-size: 1em;
+}
+
+.flotte {
+    margin-right: 20px;
+}
+
+.hr_1 {
+    /* centre verticalement les enfants entre eux */
+    align-items: center;
+
+    /* active flexbox */
+    display: flex;
+
+    /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+    text-align: center
+}
+
+.hr_1::before,
+.hr_1::after {
+    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(184, 105, 37, 0.76), rgba(0, 0, 0, 0));
+    content: "";
+    flex: 1;
+    margin: 0 .3em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.hr_2 {
+    /* centre verticalement les enfants entre eux */
+    align-items: center;
+
+    /* active flexbox */
+    display: flex;
+
+    /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+    text-align: center
+}
+
+.hr_2::before,
+.hr_2::after {
+    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(163, 99, 173), rgba(0, 0, 0, 0));
+    content: "";
+    flex: 1;
+    margin: 0 .3em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.hr_3 {
+    /* centre verticalement les enfants entre eux */
+    align-items: center;
+
+    /* active flexbox */
+    display: flex;
+
+    /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+    text-align: center
+}
+
+.hr_3::before,
+.hr_3::after {
+    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(105, 63, 209), rgba(0, 0, 0, 0));
+    content: "";
+    flex: 1;
+    margin: 0 .3em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
