@@ -89,7 +89,7 @@ main{
 header {
     text-align: center;
     background-color: #71aa87;
-    width: 100%;
+    width: auto;
 }
 
 H1 {
@@ -132,11 +132,12 @@ font-size: 1.5em;
     text-align: center;
     font-family: 'Caveat', cursive;
     font-size: 1.5em;
+    transition-duration: 400ms;
 }
+
 #first_menu:hover{
+transform: scale(1.50);}
 
-
-}
 .fa-music {
     font-size: 50px;
     background: -webkit-gradient(linear, left top, left bottom, from(rgb(207, 68, 68)), to(#EC8970));
@@ -145,26 +146,31 @@ font-size: 1.5em;
     -webkit-text-fill-color: transparent;
 }
 .menu_2{
-    width: 300px;
-    height: 400PX;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #f1ecf1;
-    box-shadow: 5px 5px 5px #a8a8a8;
-}
+  width: 300px;
+  height: 400PX;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f1ecf1;
+  box-shadow: 5px 5px 5px #a8a8a8;}
+
 #second_menu{
-    width: 250px;
-    height: 300px;
-    margin-top: 50%;
-    text-align: center;
-    font-family: 'Amita', cursive;
-    font-size: 1.5em;
-    background: -webkit-gradient(linear, left top, right bottom, from(rgb(184, 105, 37)), to(rgb(105, 63, 209)));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  width: 250px;
+  height: 300px;
+  margin-top: 50%;
+  text-align: center;
+  font-family: 'Amita', cursive;
+  font-size: 1.2em;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(184,105,37)), to(rgb(105,63,209)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition-duration: 400ms;
 }
+#second_menu:hover{
+  transform: scale(1.50);
+}
+
 #second_menu span{
     font-family: 'Roboto Slab', serif;
     background:rgb(184, 105, 37) ;
@@ -193,7 +199,11 @@ font-size: 1.5em;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition-duration: 400ms;
 }
+#third_menu:hover{
+  transform: scale(1.50);
+  }
 #third_menu span{
     font-family: 'Kalam', cursive;
     background: rgb(61, 30, 201);
@@ -221,8 +231,11 @@ font-size: 1.5em;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition-duration: 400ms;
 }
-
+#fourth_menu:hover{
+  transform: scale(1.50);
+  }
 #fourth_menu span{
     font-family: 'Kalam', cursive;
     background: rgba(5, 141, 28, 0.836);
@@ -348,10 +361,17 @@ footer
 width: auto;
 }
 
-main 
-{
-  display: flex;
-  flex-direction: column;
+#containeur_prochainement{
+margin-bottom: 150px;
 }
+}
+@media all and (max-width:480px) /* --- PETIT MOYEN --- */
+{
+
+#containeur_footer{
+flex-direction: column;
+  align-items: center;
+}
+
 
 }

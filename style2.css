@@ -51,9 +51,6 @@ a {
     color: black;
 }
 
-#first_menu:hover {
-    transform: scale(1.50);
-}
 
 #containeur_menu1 {
     display: flex;
@@ -147,4 +144,45 @@ p {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* -------------------- */
+/* ==   MEDIAS QUERIS   */
+/* -------------------- */
+
+@media all and (max-width:1024px) /* --- ECRAN LARGE --- */
+{
+
+header
+{
+  width: auto;
+}
+#page_menu
+{
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+}
+
+
+footer 
+{
+  position: fixed;
+  bottom: 0px;
+}
+
+
+#containeur_prochainement{
+margin-bottom: 150px;
+}
+}
+@media all and (max-width:480px) /* --- PETIT MOYEN --- */
+{
+
+#containeur_footer{
+flex-direction: column;
+  align-items: center;
+}
+
+
 }
