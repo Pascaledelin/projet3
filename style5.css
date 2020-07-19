@@ -128,29 +128,27 @@ p {
     margin-right: 20px;
 }
 
-.hr {
-    /* centre verticalement les enfants entre eux */
-    align-items: center;
-
-    /* active flexbox */
+.title {
     display: flex;
-
-    /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
-    text-align: center;
+    justify-content: space-around;
 }
 
-.hr::before,
-.hr::after {
-    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
-    border-top: 6px solid;
-    color: #000;
-    content: "";
-
-    /* partage le reste de la largeur disponible */
-    flex: 1;
-
-    /* espace les traits du texte */
-    margin: 0 .5em;
-    margin-left: 10%;
-    margin-right: 10%;
+.green {
+    width: 150PX;
+    height: 7PX;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(5, 141, 28, 0.836)), to(rgb(218, 247, 151)));
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
+.green1 {
+    width: 150PX;
+    height: 7PX;
+    background: -webkit-gradient(linear, right top, left bottom, from(rgba(5, 141, 28, 0.836)), to(rgb(218, 247, 151)));
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
